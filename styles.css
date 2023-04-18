@@ -1,5 +1,33 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Black.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Light.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,6 +48,26 @@ body {
     /* Add more styles for your navigation pane */
 }
 
+.site-title {
+    display: flex;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.site-links{
+    display: flex;
+    flex-direction: column;
+}
+
 .carousel-container {
     width: 75%;
     position: relative;
@@ -29,6 +77,10 @@ body {
 
 .social-icons {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .carousel {
