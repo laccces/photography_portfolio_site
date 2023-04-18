@@ -14,7 +14,8 @@ body {
 
 .navigation-pane {
     width: 25%;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
+    border: solid black;
     padding: 1rem;
     /* Add more styles for your navigation pane */
 }
@@ -24,6 +25,10 @@ body {
     position: relative;
     overflow: hidden;
     /* Add more styles for your carousel container */
+}
+
+.social-icons {
+    display: flex;
 }
 
 .carousel {
