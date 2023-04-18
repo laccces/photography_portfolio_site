@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+}
+
+.navigation-pane {
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    /* Add more styles for your navigation pane */
+}
+
+.carousel-container {
+    width: 75%;
+    position: relative;
+    overflow: hidden;
+    /* Add more styles for your carousel container */
+}
+
+.carousel {
+    display: flex;
+    /* Add more styles for your carousel */
+}
+
+.carousel img {
+    width: 100%;
+    /* Add more styles for your images */
+}
