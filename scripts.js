@@ -1,27 +1,11 @@
-const carousel = document.querySelector('.carousel');
-let carouselImages = Array.from(carousel.children);
-let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+const slideInterval = 10000; // Change this value to set the interval between slides (in milliseconds)
 
-function updateCarousel() {
-    carouselImages.forEach((image, index) => {
-        image.style.transform = `translateX(-${currentIndex * 100}%)`;
-    });
+function nextSlide() {
+    slides[currentSlide].style.opacity = 0;
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.opacity = 1;
 }
 
-function next() {
-    currentIndex = (currentIndex + 1) % carouselImages.length;
-    updateCarousel();
-}
-
-function prev() {
-    currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-    updateCarousel();
-}
-
-// Add event listeners for the previous and next buttons
-// Example:
-// prevButton.addEventListener('click', prev);
-// nextButton.addEventListener('click', next);
-
-// Add a function to autoplay the carousel if desired
-// setInterval(next, 5000);
+setInterval(nextSlide, slideInterval);

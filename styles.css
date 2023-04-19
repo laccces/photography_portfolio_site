@@ -43,7 +43,6 @@ body {
 .navigation-pane {
     width: 25%;
     background-color: #ffffff;
-    border: solid black;
     padding: 1rem;
     /* Add more styles for your navigation pane */
 }
@@ -66,13 +65,8 @@ a:hover{
 .site-links{
     display: flex;
     flex-direction: column;
-}
-
-.carousel-container {
-    width: 75%;
-    position: relative;
-    overflow: hidden;
-    /* Add more styles for your carousel container */
+    font-weight: bold;
+    padding-top: 1rem;
 }
 
 .social-icons {
@@ -83,12 +77,20 @@ a:hover{
     gap: 1rem;
 }
 
-.carousel {
-    display: flex;
-    /* Add more styles for your carousel */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.carousel img {
+.slide {
+    position: absolute;
     width: 100%;
-    /* Add more styles for your images */
+    max-width: 1200px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide:first-child {
+    opacity: 1;
 }
