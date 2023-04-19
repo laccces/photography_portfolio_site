@@ -36,15 +36,18 @@ body {
 }
 
 .container {
-    flex-grow: 1;
     display: flex;
+    width: 100%;
+    height: 55vh;
 }
 
 .navigation-pane {
+    display: flex;
+    flex-direction: column;
     width: 25%;
     background-color: #ffffff;
     padding: 1rem;
-    /* Add more styles for your navigation pane */
+    
 }
 
 .site-title {
@@ -66,9 +69,14 @@ a:hover{
     display: flex;
     flex-direction: column;
     font-weight: bold;
+    font-size: large;
     padding-top: 1rem;
 }
 
+.site-links a {
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
 .social-icons {
     display: flex;
     flex-direction: row;
@@ -85,7 +93,7 @@ a:hover{
 
 .slide {
     position: absolute;
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
     opacity: 0;
     transition: opacity 1s;
@@ -93,4 +101,8 @@ a:hover{
 
 .slide:first-child {
     opacity: 1;
+}
+
+footer {
+    padding-left: 0.5rem;
 }

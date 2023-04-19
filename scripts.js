@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
-const slideInterval = 10000; // Change this value to set the interval between slides (in milliseconds)
+const slideInterval = 9000; // Change this value to set the interval between slides (in milliseconds)
 
 function nextSlide() {
     slides[currentSlide].style.opacity = 0;
