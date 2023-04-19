@@ -108,3 +108,63 @@ a:hover{
 footer {
     padding-left: 0.5rem;
 }
+
+@media screen and (max-width: 650px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-pane {
+        width: 100%;
+        order: 2;
+        align-items: center;
+    }
+
+    .site-title {
+        order: 1;
+        text-align: center;
+    }
+
+    .site-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .site-links a {
+        padding-left: 1rem;
+        padding-bottom: 0;
+    }
+
+    .slider {
+        order: 3;
+        max-width: 100%;
+        margin-top: 1rem;
+        height: auto;
+    }
+
+    .slide {
+        position: static;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    footer {
+        order: 4;
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+    }
+}
