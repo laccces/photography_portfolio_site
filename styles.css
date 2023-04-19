@@ -53,7 +53,7 @@ body {
 .site-title {
     display: flex;
     font-weight: bolder;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 a {
@@ -109,7 +109,7 @@ footer {
     padding-left: 0.5rem;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     body {
         flex-direction: column;
         align-items: center;
@@ -152,7 +152,7 @@ footer {
     }
 
     .slide {
-        position: static;
+        position: relative;
         width: 100%;
         opacity: 1;
     }
